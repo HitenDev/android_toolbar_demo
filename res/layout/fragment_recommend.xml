@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#E2E6E5" />
+
+            <com.example.toolbar.view.CircularBannerView
+                android:id="@+id/circular_banner"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+
+            <com.example.toolbar.view.LazyListView
+                android:id="@+id/list_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.example.toolbar.view.LazyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

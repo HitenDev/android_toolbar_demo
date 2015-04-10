@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E2E6E5" >
+    
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@android:color/white">
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/findPwd_et_phoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/register_phonenumber_icon"
+                android:ems="10"
+                android:hint="11位手机号"
+                android:inputType="textUri"
+                android:maxLength="11"
+                android:singleLine="true" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/findPwd_et_phoneNumber"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/line" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/findPwd_et_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/line"
+                android:background="@null"
+                android:drawableLeft="@drawable/register_msg_icon"
+                android:ems="10"
+                android:hint="请输入短信验证码"
+                android:maxLength="16"
+                android:singleLine="true" >
+            </EditText>
+<TextView
+                android:id="@+id/findPwd_btn_getVerifyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/findPwd_et_msg"
+                android:layout_alignRight="@id/findPwd_et_msg"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="获取验证码"
+                android:textColor="@color/applicationMainColor" />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/findPwd_btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shape_clickup"
+        android:text="下 一 步"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
